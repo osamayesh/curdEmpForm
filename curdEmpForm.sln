@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "curdEmpForm", "curdEmpForm\curdEmpForm.csproj", "{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25DA7373-AB34-47FB-BB95-0281AEF18FC0}
+	EndGlobalSection
+EndGlobal
