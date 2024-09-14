@@ -2,7 +2,7 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Globalization;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -10,119 +10,169 @@ namespace curdEmpForm
 {
     public partial class About : Page
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
+        sampleEmpDBEntities db = new sampleEmpDBEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+
+            if (Session["UserName"] == null || (Session["RoleName"] != null && !Session["RoleName"].ToString().ToLower().Equals("Admin")))
             {
-                BindGrid();
+                Response.Redirect("login.aspx");
+            }
+            else
+            {
+                BindGridView();
+            }
+
+
+            if (!IsPostBack) // Check if the GridView  cant rpeat data when button click or refersh site 
+            {
+                BindGridView();
             }
         }
-        
-        //retiver data 
-        private void BindGrid()
+
+        private void BindGridView()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Employee", conn);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                gvResults.DataSource = dt;
-                gvResults.DataBind(); //render data 
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Employee", con))
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    gvEmployees.DataSource = dt;
+                    gvEmployees.DataBind();
+                }
             }
         }
 
-        protected void modal_Click(object sender, EventArgs e)
+        protected void btnAddNewEmployee_Click(object sender, EventArgs e)
         {
             ClearForm();
-            ViewState["EmployeeId"] = null;  // Clear the ViewState to indicate a new record
-            ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "$('#mymodal').modal('show');", true);
+            hdnEmployeeId.Value = string.Empty;
+            btnSaveEmployee.Text = "Add Employee";
+            ScriptManager.RegisterStartupScript(this, GetType(), "OpenModal", "openEmployeeModal();", true);
         }
 
-        protected void btnsave_Click(object sender, EventArgs e)
+        protected void lnkUpdate_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
+            LinkButton lnkUpdate = (LinkButton)sender;
+            int employeeId = Convert.ToInt32(lnkUpdate.CommandArgument);
 
-            // Validate the input fields before proceeding with database operations
-            if (ddlGender.SelectedValue == "Select Gender")
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                lblmsg.Text = "Please select a valid gender.";
-                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "$('#mymodal').modal('show');", true);
-                return;
-            }
-
-            DateTime dateOfBirth;
-            if (!DateTime.TryParseExact(txtDateOfBirth.Text, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateOfBirth))
-            {
-                lblmsg.Text = "Please enter a valid date of birth in the format yyyy-MM-dd.";
-                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "$('#mymodal').modal('show');", true);
-                return;
-            }
-
-            decimal salary;
-            if (!decimal.TryParse(TxtSalary.Text, out salary))
-            {
-                lblmsg.Text = "Please enter a valid salary.";
-                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "$('#mymodal').modal('show');", true);
-                return;
-            }
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd;
-
-                // Check if we're adding a new record or updating an existing one
-                if (ViewState["EmployeeId"] != null)
+                string query = "SELECT * FROM Employee WHERE Id = @Id";
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    // Update existing employee
-                    cmd = new SqlCommand("UPDATE Employee SET EmpNumber = @EmpNumber, EmpName = @EmpName, Gender = @Gender, Date_of_birth = @Date_of_birth, Position = @Position, Salary = @Salary WHERE Id = @Id", conn);
-                    cmd.Parameters.AddWithValue("@Id", ViewState["EmployeeId"]);
-                }
-                else
-                {
-                    // Add new employee
-                    cmd = new SqlCommand("INSERT INTO Employee (EmpNumber, EmpName, Gender, Date_of_birth, Position, Salary) VALUES (@EmpNumber, @EmpName, @Gender, @Date_of_birth, @Position, @Salary)", conn);
-                }
-
-                cmd.Parameters.AddWithValue("@EmpNumber", txtEmpNumber.Text);
-                cmd.Parameters.AddWithValue("@EmpName", txtEmpName.Text);
-                cmd.Parameters.AddWithValue("@Gender", ddlGender.SelectedValue);
-                cmd.Parameters.AddWithValue("@Date_of_birth", dateOfBirth);
-                cmd.Parameters.AddWithValue("@Position", TxtPosition.Text);
-                cmd.Parameters.AddWithValue("@Salary", salary);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
-                {
-                    lblmsg.Text = ViewState["EmployeeId"] != null ? "Employee updated successfully" : "Employee added successfully";
-                }
-                else
-                {
-                    lblmsg.Text = "Error while saving data";
+                    cmd.Parameters.AddWithValue("@Id", employeeId);
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        hdnEmployeeId.Value = reader["Id"].ToString();
+                        txtEmpName.Text = reader["EmpName"].ToString();
+                        txtEmpNumber.Text = reader["EmpNumber"].ToString();
+                        ddlGender.SelectedValue = reader["Gender"].ToString();
+                        txtDateOfBirth.Text = Convert.ToDateTime(reader["Date_of_birth"]).ToString("yyyy-MM-dd");
+                        txtSalary.Text = reader["Salary"].ToString();
+                        txtPosition.Text = reader["Position"].ToString();
+                    }
                 }
             }
-            //used to execure a javascript function on client side from server-side code in an asp web forms application
-            ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "$('#mymodal').modal('hide');", true);
-            ClearForm();
-            BindGrid();
+
+            btnSaveEmployee.Text = "Update Employee";
+            ScriptManager.RegisterStartupScript(this, GetType(), "OpenModal", "openEmployeeModal();", true);
         }
 
+        protected void btnSaveEmployee_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(hdnEmployeeId.Value))
+            {
+                InsertEmployee();
+            }
+            else
+            {
+                UpdateEmployee();
+            }
+
+            BindGridView();
+            ScriptManager.RegisterStartupScript(this, GetType(), "CloseModal", "$('#employeeModal').modal('hide');", true);
+        }
+
+        private void InsertEmployee()
+        {
+            string query = "INSERT INTO Employee (EmpName, EmpNumber, Gender, Date_of_birth, Salary, Position) " +
+                           "VALUES (@EmpName, @EmpNumber, @Gender, @DateOfBirth, @Salary, @Position)";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@EmpName", txtEmpName.Text);
+                    cmd.Parameters.AddWithValue("@EmpNumber", txtEmpNumber.Text);
+                    cmd.Parameters.AddWithValue("@Gender", ddlGender.SelectedValue);
+                    cmd.Parameters.AddWithValue("@DateOfBirth", Convert.ToDateTime(txtDateOfBirth.Text));
+                    cmd.Parameters.AddWithValue("@Salary", Convert.ToDecimal(txtSalary.Text));
+                    cmd.Parameters.AddWithValue("@Position", txtPosition.Text);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void UpdateEmployee()
+        {
+            string query = "UPDATE Employee SET EmpName = @EmpName, EmpNumber = @EmpNumber, Gender = @Gender, " +
+                           "Date_of_birth = @DateOfBirth, Salary = @Salary, Position = @Position WHERE Id = @Id";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", Convert.ToInt32(hdnEmployeeId.Value));
+                    cmd.Parameters.AddWithValue("@EmpName", txtEmpName.Text);
+                    cmd.Parameters.AddWithValue("@EmpNumber", txtEmpNumber.Text);
+                    cmd.Parameters.AddWithValue("@Gender", ddlGender.SelectedValue);
+                    cmd.Parameters.AddWithValue("@DateOfBirth", Convert.ToDateTime(txtDateOfBirth.Text));
+                    cmd.Parameters.AddWithValue("@Salary", Convert.ToDecimal(txtSalary.Text));
+                    cmd.Parameters.AddWithValue("@Position", txtPosition.Text);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+        protected void lnkDelete_Click(object sender, EventArgs e)
+        {
+            LinkButton lnkDelete = (LinkButton)sender;
+            int employeeId = Convert.ToInt32(lnkDelete.CommandArgument);
+
+            string query = "DELETE FROM Employee WHERE Id = @Id";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", employeeId);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            BindGridView();
+        }
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
-
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Employee WHERE EmpName LIKE @EmpName OR Id = @Id", conn);
                 cmd.Parameters.AddWithValue("@EmpName", "%" + txtSearch.Text + "%");
-
                 int id;
                 if (int.TryParse(txtSearch.Text, out id))
                 {
@@ -137,85 +187,20 @@ namespace curdEmpForm
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                gvResults.DataSource = dt;
-                gvResults.DataBind();
-            }
+                BindGridView();
+                gvEmployees.DataSource = dt;
+                gvEmployees.DataBind();
+            } 
         }
-
-
-        protected void btndlt_Command(object sender, CommandEventArgs e)
-        {
-            string id = e.CommandArgument.ToString();
-            string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM Employee WHERE Id = @Id", conn);
-                cmd.Parameters.AddWithValue("@Id", id);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
-                {
-                    lblmsg.Text = "Data Deleted Successfully";
-                }
-                else
-                {
-                    lblmsg.Text = "Error while deleting data";
-                }
-            }
-
-            BindGrid();
-        }
-
-        protected void btnupdate_Command(object sender, CommandEventArgs e)
-        {
-            string id = e.CommandArgument.ToString();
-            string connectionString = ConfigurationManager.ConnectionStrings["connection_"].ConnectionString;
-
-            // Fetch employee details based on the provided ID
-            FetchEmployeeDetails(id, connectionString);
-
-            // Store the ID in ViewState to update this record later
-            ViewState["EmployeeId"] = id;
-
-            // Show the modal with the fetched details
-            ScriptManager.RegisterStartupScript(this, GetType(), "OpenModalScript", "$('#mymodal').modal('show');", true);
-        }
-
-        private void FetchEmployeeDetails(string id, string connectionString)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT EmpNumber, EmpName, Gender, Date_of_birth, Position, Salary FROM Employee WHERE Id = @Id", conn);
-                cmd.Parameters.AddWithValue("@Id", id);
-
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
-                {
-                    if (dataReader.Read())
-                    {
-                        txtEmpNumber.Text = dataReader["EmpNumber"].ToString();
-                        txtEmpName.Text = dataReader["EmpName"].ToString();
-                        ddlGender.SelectedValue = dataReader["Gender"].ToString();
-                        txtDateOfBirth.Text = Convert.ToDateTime(dataReader["Date_of_birth"]).ToString("yyyy-MM-dd");
-                        TxtPosition.Text = dataReader["Position"].ToString();
-                        TxtSalary.Text = dataReader["Salary"].ToString(); // Convert to string for TextBox
-                    }
-                }
-            }
-        }
-
         private void ClearForm()
         {
-            txtEmpNumber.Text = "";
-            txtEmpName.Text = "";
+            hdnEmployeeId.Value = string.Empty;
+            txtEmpName.Text = string.Empty;
+            txtEmpNumber.Text = string.Empty;
             ddlGender.SelectedIndex = 0;
-            txtDateOfBirth.Text = "";
-            TxtPosition.Text = "";
-            TxtSalary.Text = "";
-            ViewState["EmployeeId"] = null;
+            txtDateOfBirth.Text = string.Empty;
+            txtSalary.Text = string.Empty;
+            txtPosition.Text = string.Empty;
         }
     }
 }

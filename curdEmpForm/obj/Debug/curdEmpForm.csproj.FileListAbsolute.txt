@@ -70,3 +70,7 @@ C:\Users\user\source\repos\curdEmpForm\curdEmpForm\obj\Debug\curdEmpForm.csproj.
 C:\Users\user\source\repos\curdEmpForm\curdEmpForm\obj\Debug\curdEmpF.62B6AB78.Up2Date
 C:\Users\user\source\repos\curdEmpForm\curdEmpForm\obj\Debug\curdEmpForm.dll
 C:\Users\user\source\repos\curdEmpForm\curdEmpForm\obj\Debug\curdEmpForm.pdb
+C:\Users\user\source\repos\curdEmpForm\curdEmpForm\bin\EntityFramework.dll
+C:\Users\user\source\repos\curdEmpForm\curdEmpForm\bin\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\curdEmpForm\curdEmpForm\bin\EntityFramework.xml
+C:\Users\user\source\repos\curdEmpForm\curdEmpForm\bin\EntityFramework.SqlServer.xml

@@ -11,6 +11,13 @@ namespace curdEmpForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie myCookie = new HttpCookie("cooklogin");
+            myCookie = Request.Cookies["cooklogin"];
+            if (myCookie != null)
+            {
+
+            }
+
 
         }
     }

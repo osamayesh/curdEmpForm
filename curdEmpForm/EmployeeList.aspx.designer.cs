@@ -15,22 +15,13 @@ namespace curdEmpForm
     {
 
         /// <summary>
-        /// lblmsg control.
+        /// hdnEmployeeId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblmsg;
-
-        /// <summary>
-        /// TxtId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtId;
+        protected global::System.Web.UI.WebControls.HiddenField hdnEmployeeId;
 
         /// <summary>
         /// txtEmpName control.
@@ -51,15 +42,6 @@ namespace curdEmpForm
         protected global::System.Web.UI.WebControls.TextBox txtEmpNumber;
 
         /// <summary>
-        /// txtDateOfBirth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDateOfBirth;
-
-        /// <summary>
         /// ddlGender control.
         /// </summary>
         /// <remarks>
@@ -69,40 +51,40 @@ namespace curdEmpForm
         protected global::System.Web.UI.WebControls.DropDownList ddlGender;
 
         /// <summary>
-        /// TxtSalary control.
+        /// txtDateOfBirth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSalary;
+        protected global::System.Web.UI.WebControls.TextBox txtDateOfBirth;
 
         /// <summary>
-        /// TxtPosition control.
+        /// txtSalary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPosition;
+        protected global::System.Web.UI.WebControls.TextBox txtSalary;
 
         /// <summary>
-        /// btnSave control.
+        /// txtPosition control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
+        protected global::System.Web.UI.WebControls.TextBox txtPosition;
 
         /// <summary>
-        /// modal control.
+        /// btnSaveEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button modal;
+        protected global::System.Web.UI.WebControls.Button btnSaveEmployee;
 
         /// <summary>
         /// txtSearch control.
@@ -123,21 +105,21 @@ namespace curdEmpForm
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// gvResults control.
+        /// btnAddNewEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvResults;
+        protected global::System.Web.UI.WebControls.Button btnAddNewEmployee;
 
         /// <summary>
-        /// ds1 control.
+        /// gvEmployees control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ds1;
+        protected global::System.Web.UI.WebControls.GridView gvEmployees;
     }
 }

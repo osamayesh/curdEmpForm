@@ -3,24 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\curdEmpForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\employeelist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\employeelist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\sampleempdbentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\sampleempdbentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|c:\\users\\user\\source\\repos\\curdempform\\curdempform\\employeelist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\employeelist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\employeelist.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\employeelist.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\employeelist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\employeelist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\unauthorized.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\unauthorized.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\sginup.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\sginup.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\sginup.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\sginup.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\employeelist.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\employeelist.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\customers.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\customers.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|C:\\Users\\user\\source\\repos\\curdEmpForm\\curdempform\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA779ED-7F89-4AA8-9BD7-2A0FB9680890}|curdEmpForm\\curdEmpForm.csproj|solutionrelative:curdempform\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,41 +114,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeList.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.designer.cs",
-              "RelativeDocumentMoniker": "curdEmpForm\\EmployeeList.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.designer.cs",
-              "RelativeToolTip": "curdEmpForm\\EmployeeList.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADgv5gAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Admin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Admin.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Admin.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Admin.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\Admin.aspx.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T14:44:35.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Web.config",
-              "RelativeDocumentMoniker": "curdEmpForm\\Web.config",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Web.config",
-              "RelativeToolTip": "curdEmpForm\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-02T13:44:18.623Z",
+              "WhenOpened": "2024-09-13T16:31:25.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\login.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\login.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\login.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\login.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:49:48.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cart.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Cart.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Cart.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Cart.aspx",
+              "RelativeToolTip": "curdEmpForm\\Cart.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-12T20:52:23.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sampleEmpDBEntities.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sampleEmpDBEntities.edmx",
+              "RelativeDocumentMoniker": "curdEmpForm\\sampleEmpDBEntities.edmx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sampleEmpDBEntities.edmx [Diagram1]",
+              "RelativeToolTip": "curdEmpForm\\sampleEmpDBEntities.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-14T12:35:46.6Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Products.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Products.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Products.aspx",
+              "RelativeToolTip": "curdEmpForm\\Products.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-12T16:26:25.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Products.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Products.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Products.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\Products.aspx.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwE8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T16:32:30.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Admin.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Admin.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Admin.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Admin.aspx",
+              "RelativeToolTip": "curdEmpForm\\Admin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-13T16:27:41.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Site.Master",
               "RelativeDocumentMoniker": "curdEmpForm\\Site.Master",
@@ -72,25 +216,51 @@
               "RelativeToolTip": "curdEmpForm\\Site.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-01T19:17:16.495Z",
+              "WhenOpened": "2024-09-11T17:35:20.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Cart.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Cart.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Cart.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Cart.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\Cart.aspx.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwEwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:05:13.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\login.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\login.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\login.aspx",
+              "RelativeToolTip": "curdEmpForm\\login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-07T16:21:29.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmployeeList.aspx.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.cs",
               "RelativeDocumentMoniker": "curdEmpForm\\EmployeeList.aspx.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.cs",
               "RelativeToolTip": "curdEmpForm\\EmployeeList.aspx.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAcwIwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T19:05:41.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "EmployeeList.aspx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx",
               "RelativeDocumentMoniker": "curdEmpForm\\EmployeeList.aspx",
@@ -99,6 +269,188 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-09-01T18:17:01.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Default.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Default.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Default.aspx",
+              "RelativeToolTip": "curdEmpForm\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-07T16:11:45.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Web.config",
+              "RelativeDocumentMoniker": "curdEmpForm\\Web.config",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Web.config",
+              "RelativeToolTip": "curdEmpForm\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-02T13:44:18.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Unauthorized.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Unauthorized.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Unauthorized.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Unauthorized.aspx",
+              "RelativeToolTip": "curdEmpForm\\Unauthorized.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-13T17:13:10.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "logout.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\logout.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\logout.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\logout.aspx",
+              "RelativeToolTip": "curdEmpForm\\logout.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-11T18:44:19.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Global.asax.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Global.asax.cs",
+              "RelativeToolTip": "curdEmpForm\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:14:50.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "sginup.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sginup.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\sginup.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sginup.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\sginup.aspx.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T19:35:12.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Customers.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Customers.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\Customers.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:56:50.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Customers.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\Customers.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx",
+              "RelativeToolTip": "curdEmpForm\\Customers.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-10T16:54:16.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "sginup.aspx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sginup.aspx",
+              "RelativeDocumentMoniker": "curdEmpForm\\sginup.aspx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\sginup.aspx",
+              "RelativeToolTip": "curdEmpForm\\sginup.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-11T19:34:23.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "logout.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\logout.aspx.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\logout.aspx.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\logout.aspx.cs",
+              "RelativeToolTip": "curdEmpForm\\logout.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:44:29.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "curdEmpForm\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:30:29.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Site.Master.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Site.Master.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Site.Master.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Site.Master.cs",
+              "RelativeToolTip": "curdEmpForm\\Site.Master.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:19:32.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmployeeList.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.designer.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\EmployeeList.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\EmployeeList.aspx.designer.cs",
+              "RelativeToolTip": "curdEmpForm\\EmployeeList.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADgv30AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T14:44:35.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Customers.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx.designer.cs",
+              "RelativeDocumentMoniker": "curdEmpForm\\Customers.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\curdEmpForm\\curdEmpForm\\Customers.aspx.designer.cs",
+              "RelativeToolTip": "curdEmpForm\\Customers.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T18:23:23.313Z",
               "EditorCaption": ""
             }
           ]
